@@ -1,0 +1,28 @@
+Feature: OnlineStore automation
+  As a user I want to login, find the product, add to the cart, select payment option and proceed the order.
+
+  Scenario: Place order in online Store
+    Given user navigates to the app url
+    When user clicks on Sign In button
+    And user fills email field
+    And user fills password field
+    And user clicks Log In button
+    And user clicks Woman link
+    And user selects some dress
+    And user clicks Add to Cart button
+    And user clicks Check Out button
+    And user clicks Final CheckOut button
+    And user checks delivery address
+    And user checks billing address
+    And user clicks Next Check Out Button
+    And user closes Error message window
+    And user mark terms check box
+    And user clicks Last Check Out button
+    And user clicks on check payment option
+    And user clicks Confirm Order link
+    And user verifies if order confirmation text is present
+    And user clicks on BackOrders button
+    Then order total amount is right
+
+
+
